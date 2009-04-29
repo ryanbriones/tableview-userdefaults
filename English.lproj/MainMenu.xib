@@ -1375,10 +1375,6 @@
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
 			<object class="NSUserDefaultsController" id="616665819">
-				<object class="NSMutableArray" key="NSDeclaredKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>contacts</string>
-				</object>
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</object>
@@ -1915,22 +1911,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">contentArray: values.contacts</string>
-						<reference key="source" ref="667447551"/>
-						<reference key="destination" ref="616665819"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="667447551"/>
-							<reference key="NSDestination" ref="616665819"/>
-							<string key="NSLabel">contentArray: values.contacts</string>
-							<string key="NSBinding">contentArray</string>
-							<string key="NSKeyPath">values.contacts</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">466</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.name</string>
 						<reference key="source" ref="620638047"/>
 						<reference key="destination" ref="667447551"/>
@@ -1992,6 +1972,26 @@
 						</object>
 					</object>
 					<int key="connectionID">475</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">contentArray: values.contacts</string>
+						<reference key="source" ref="667447551"/>
+						<reference key="destination" ref="616665819"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="667447551"/>
+							<reference key="NSDestination" ref="616665819"/>
+							<string key="NSLabel">contentArray: values.contacts</string>
+							<string key="NSBinding">contentArray</string>
+							<string key="NSKeyPath">values.contacts</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSHandlesContentAsCompoundValue</string>
+								<integer value="1" key="NS.object.0"/>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">476</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3499,7 +3499,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">475</int>
+			<int key="maxID">476</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
